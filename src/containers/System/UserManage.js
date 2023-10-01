@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
+import './UserManage.scss';
 class UserManage extends Component {
 
-    state = {
+    constructor(props) {
+        super(props);
+        this.state = {
 
+        }
     }
 
     componentDidMount() {
@@ -14,7 +18,9 @@ class UserManage extends Component {
 
     render() {
         return (
-            <div className="text-center">Manage users</div>
+            <div className="users-container">
+                <div className='title text-center'>Manger users with Eric</div>
+            </div>
         );
     }
 
