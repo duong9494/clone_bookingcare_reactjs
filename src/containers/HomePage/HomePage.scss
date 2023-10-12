@@ -34,9 +34,13 @@
         background: #f5f5f5;
     }
 
+    &.section-outstanding-doctor {
+        background: #f5f5f5;
+    }
+
     .section-body {
 
-        .specialty-customize {
+        .section-customize {
             .bg-image {
                 width: 278px;
                 height: 150px;
@@ -46,11 +50,22 @@
                 background-color: #eee;
 
                 &.section-specialty {
-                    background: url('../../assets/specialty/cotsong.jpg');
+                    background-image: url('../../assets/specialty/cotsong.jpg');
                 }
 
                 &.section-medical-facility {
-                    background: url('../../assets/medical-facility/thucuc.png');
+                    background-image: url('../../assets/medical-facility/thucuc.png');
+                }
+
+                &.section-outstanding-doctor {
+                    background-image: url('../../assets/outstanding-doctor/bsnoibat.png');
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+
+                &.section-handbook {
+                    background-image: url('../../assets/handbook/camnang.jpg');
                 }
             }
         }
@@ -94,6 +109,23 @@
         }
 
         
+    }
+}
+
+.section-outstanding-doctor {
+    .outer-bg {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .section-customize {
+        padding: 5px;
+
+        .customize-border {
+            border: 1px solid orange;
+            padding: 20px;
+        }
     }
 }
 
