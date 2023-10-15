@@ -139,16 +139,16 @@ class Login extends Component {
                             </div>
                         )}
 
-                        <div className="form-group login">
-                            <input
-                                ref={this.btnLogin}
-                                id="btnLogin"
-                                type="submit"
-                                className="btn"
-                                value={LanguageUtils.getMessageByKey("login.login", lang)}
-                                onClick={this.processLogin}
-                            />
-                        </div>
+                      <div className="form-group login">
+                          <input  
+                              ref={this.btnLogin}
+                              id="btnLogin"
+                              type="submit"
+                              className="btn"
+                              value={LanguageUtils.getMessageByKey("login.login", lang)}
+                              onClick={this.processLogin}
+                          />
+                      </div>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@ class Login extends Component {
 
 const mapStateToProps = state => {
     return {
-        lang: state.app.language
+        lang: state.app.language 
     };
 };
 
